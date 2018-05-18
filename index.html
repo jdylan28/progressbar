@@ -36,35 +36,39 @@
             font-size: 16px;
             font-family: "Lato";
             letter-spacing: 1px;
-            font-weight: 200;
+            font-weight: 300;
         }
 
-        .one {
-            background-color: #1C4758;
 
-        }
 
         .two {
-            background-color: #2D6B72;
+            background-color: #D3D3D3;
+            ;
         }
 
-        .three {
-            background-color: #418B83;
+        .active {
+            font-weight: 500;
         }
 
+
+
+        .three,
         .four {
-            background-color: #D9F2F0;
+            background-color: #D3D3D3;
         }
 
-        .mentor {
+        .disabled {
             color: #333333;
         }
 
-        .mentor:hover {
+        .disabled:hover {
             color: #333333;
         }
 
-        .line {
+        .line,
+        .linetwo,
+        .linethree,
+        .linefour {
             background-color: #1c4758;
             padding: 1px;
             margin-top: 3px;
@@ -72,21 +76,24 @@
             border-radius: 20px;
         }
 
-         .linetwo{
-            background-color: #1c4758;
-            padding: 1px;
-            margin-top: 3px;
-            margin-left: 25%;
-            width: 25%;
-            border-radius: 20px;
+        .linetwo {
+            width: 50%;
         }
 
-        .profile {
-            font-weight: 500;
+        .linethree {
+            width: 75%;
         }
 
-        .goal {
-            font-weight: 500;
+        .linefour {
+            width: 100%;
+        }
+
+        .one,
+        .twotwo,
+        .backgroundthree,
+        .backgroundfour {
+            background-color: #1C4758;
+
         }
     </style>
 </head>
@@ -95,26 +102,18 @@
     <div class="container">
         <div class="progress">
             <div class="one progress-bar" role="progressbar" style="width: 25%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">
-                <a href="#">
-                    <p>Profile</p>
-                </a>
+                <p class="active">Profile</p>
 
             </div>
             <div class="two progress-bar" role="progressbar" style="width: 25%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
-                <a href="#">
-                    <p>Goal</p>
-                </a>
+                <p class="disabled">Goal</p>
 
             </div>
             <div class="three progress-bar" role="progressbar" style="width: 25%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                <a href="#">
-                    <p>Community</p>
-                </a>
+                <p class="disabled">Community</p>
             </div>
             <div class="four progress-bar" role="progressbar" style="width: 25%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                <a class="mentor" href="#">
-                    <p>Mentor</p>
-                </a>
+                <p class="disabled">Mentor</p>
             </div>
 
         </div>
@@ -128,30 +127,90 @@
         <div class="progress">
             <div class="one progress-bar" role="progressbar" style="width: 25%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">
                 <a href="#">
-                    <p class="profile">Profile</p>
+                    <p>Profile</p>
                 </a>
 
             </div>
-            <div class="two progress-bar" role="progressbar" style="width: 25%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+            <div class="twotwo progress-bar" role="progressbar" style="width: 25%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
                 <a href="#">
-                    <p class="goal">Goal</p>
+                    <p class="active goaltwo">Goal</p>
                 </a>
 
             </div>
             <div class="three progress-bar" role="progressbar" style="width: 25%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                <a href="#">
-                    <p>Community</p>
+                <p class="disabled">Community</p>
                 </a>
             </div>
             <div class="four progress-bar" role="progressbar" style="width: 25%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                <a class="mentor" href="#">
-                    <p>Mentor</p>
+                <p class="disabled">Mentor</p>
                 </a>
             </div>
 
         </div>
 
         <div class=linetwo></div>
+
+    </div>
+
+    <div class="container">
+        <div class="progress">
+            <div class="one progress-bar" role="progressbar" style="width: 25%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">
+                <a href="#">
+                    <p>Profile</p>
+                </a>
+
+            </div>
+            <div class="two progress-bar backgroundthree" role="progressbar" style="width: 25%" aria-valuenow="30" aria-valuemin="0"
+                aria-valuemax="100">
+                <a href="#">
+                    <p>Goal</p>
+                </a>
+
+            </div>
+            <div class="three progress-bar backgroundthree" role="progressbar" style="width: 25%" aria-valuenow="20" aria-valuemin="0"
+                aria-valuemax="100">
+                <a href="#">
+                    <p class="active communitythree">Community</p>
+                </a>
+            </div>
+            <div class="four progress-bar" role="progressbar" style="width: 25%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                <p class="disabled">Mentor</p>
+            </div>
+
+        </div>
+
+        <div class=linethree></div>
+
+    </div>
+
+    <div class="container">
+        <div class="progress">
+            <div class="one progress-bar backgroundfour" role="progressbar" style="width: 25%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">
+                <a href="#">
+                    <p>Profile</p>
+                </a>
+
+            </div>
+            <div class="two progress-bar backgroundfour" role="progressbar" style="width: 25%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+                <a href="#">
+                    <p>Goal</p>
+                </a>
+
+            </div>
+            <div class="three progress-bar backgroundfour" role="progressbar" style="width: 25%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                <a href="#">
+                    <p>Community</p>
+                </a>
+            </div>
+            <div class="four progress-bar backgroundfour" role="progressbar" style="width: 25%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                <a href="#">
+                    <p class="active">Mentor</p>
+                </a>
+            </div>
+
+        </div>
+
+        <div class=linefour></div>
 
     </div>
 
